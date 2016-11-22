@@ -320,6 +320,14 @@ final class WiredAccessoryManager implements WiredAccessoryCallbacks {
                 (switchValues & SW_MICROPHONE_INSERT_BIT) != 0) {
             sb.append("SW_MICROPHONE_INSERT");
         }
+        if ((switchMask & SW_LINEOUT_INSERT_BIT) != 0 &&
+                (switchValues & SW_LINEOUT_INSERT_BIT) != 0) {
+            sb.append("SW_LINEOUT_INSERT ");
+        }
+        if ((switchMask & SW_VIDEOOUT_INSERT_BIT) != 0 &&
+                (switchValues & SW_VIDEOOUT_INSERT_BIT) != 0) {
+            sb.append("SW_VIDEOOUT_INSERT ");
+        }
         return sb.toString();
     }
 
