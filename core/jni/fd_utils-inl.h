@@ -50,6 +50,7 @@ static const char* kPathWhitelist[] = {
   "/dev/__properties__",  /* Only on Android Lollipop and below. */
   "/dev/null",
   "/dev/socket/zygote",
+  "/dev/socket/svmp_sensors",
   "/dev/socket/zygote_secondary",
   "/system/etc/event-log-tags",
   "/sys/kernel/debug/tracing/trace_marker",
